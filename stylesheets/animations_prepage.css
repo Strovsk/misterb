@@ -1,0 +1,47 @@
+@keyframes animateBar{
+    from{
+        height: 0em;
+    }
+    to{
+        height: 4em;
+    }
+}
+
+@keyframes animateTextBar{
+    from{
+        margin-left: -3em;
+    }
+    to{
+        margin-left: 0em;
+    }
+}
+
+@keyframes flipTop{
+    from{
+        margin-left: -4.375em;
+    }
+    
+    to{
+        margin-left: -2em;
+    }
+}
+
+@keyframes flipMid{
+    from{
+        margin-left: -4.375em;
+    }
+    
+    to{
+        margin-left: -2em;
+    }
+}
+
+@keyframes flipDown{
+    from{
+        margin-left: -4.375em;
+    }
+    
+    to{
+        margin-left: -2em;
+    }
+}

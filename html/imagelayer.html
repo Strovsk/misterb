@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>image</title>
+        <link rel="stylesheet" href="../stylesheets/folha2/galeria.css">
+        <style>
+            
+            @font-face{
+                font-family: "title";
+                src: url("../fonts/menuType.otf");
+            }
+            body{
+                background-color: aqua;
+                overflow: hidden;
+                margin: 0;
+                box-sizing: border-box;
+            }
+            #extImage{
+                color: #eeeeee;
+                width: 100vw;
+                height: 100vh;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+                        
+            .close::after{
+                content: '';
+                display: block;
+                width: 20px;
+                height: 3px;
+                background-color: #eeeeee;
+                transform: rotate(45deg);
+                border-radius: 5px;
+
+                position: absolute;
+                top: 45%;
+                left: 20%;
+            }
+
+            .close::before{
+                content: '';
+                display: block;
+                width: 20px;
+                height: 3px;
+                background-color: #eeeeee;
+                transform: rotate(135deg);
+                border-radius: 5px;
+
+                position: absolute;
+                top: 45%;
+                left: 20%;
+            }
+
+            .close{
+                position:relative;
+                width: 30px;
+                height: 30px;
+                border-radius: 50%;
+                /* background-color: rgba(27, 27, 27, 1); */
+                
+                justify-items: flex-start;
+                transition: all .5s;
+
+                margin-right: 10px;
+                margin-top: 10px;
+            }
+            .close:hover{
+                background-color: rgba(238, 238, 238, .3);
+            }
+
+            #extImage h2{
+                margin-left: 10px;
+                text-indent: 20px;
+                align-self: flex-end;
+                font-family: "title";
+            }
+        </style>
+
+        <script src="../scripts/descriptionPg2.js"></script>
+    </head>
+    <body>
+        <div id="extImage">
+            <h2></h2>
+            <div class="close" onclick="maxim('a', 'off')"></div>
+        </div>
+    </body>
+</html>

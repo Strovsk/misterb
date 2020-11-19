@@ -1,0 +1,59 @@
+.data-abertura-page-2{
+    display: flex;
+    align-items: center;
+    /* border: 3px solid #1b1b1b; */
+    width: 100%;
+
+    grid-area: calendar;
+
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.calendar-clock-container{
+    margin-right: 1%;
+    width: 100px;
+    height: 100px;
+    border: 3px solid rgba(245, 154, 69, 1);
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+}
+
+
+.calendar-clock-container .marker{
+    width: 12%;
+    height: 12%;
+    border-radius: 50%;
+    margin-top: 6%;
+    margin-right: 6%;
+    background-color: rgba(113, 16, 15, 1);
+}
+
+.date h1{
+    font-family: "calendar";
+    font-size: 3rem;
+    font-weight: normal;
+    background-color: #fff;
+    /* background-color: #1b1b1b; */
+    /* background-color: #666; */
+    /* color: #eee; */
+    color: #1b1b1b;
+    margin-top: 6%;
+    margin-left: -10%;
+    margin-right: 50%;
+}
+.date p{
+    font-family: "calendar";
+    font-size: 1rem;
+    padding: 4%;
+    margin-top: -35%;
+    /* color: #eee; */
+    color: #1b1b1b;
+}
+
+.calendar-clock-container .date{
+    /* background-color: rgb(7, 101, 243); */
+    width: 100%;
+    height: 100%;
+}

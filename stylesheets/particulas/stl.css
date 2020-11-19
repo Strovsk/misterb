@@ -1,0 +1,25 @@
+body{
+    margin: 0;
+}
+  
+.particula{
+    position: absolute;
+    height: 4px;
+    width: 4px;
+    border-radius: 50%;
+    background-color:rgba(255, 239, 69, 0);
+    box-shadow: 0 1px 8px rgba(255, 239, 69, 0);
+    /* filter: blur(1px);
+    -webkit-filter: blur(1px);
+    -moz-filter: blur(1px);
+    -ms-filter: blur(1px);
+    -o-filter: blur(1px); */
+}
+
+.container{
+    position: relative;
+    background-color: #2c2c2c;
+    height: 1vh;
+    margin-left: 30%;
+    margin-top: 20%;
+}

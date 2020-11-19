@@ -1,0 +1,104 @@
+@keyframes girarPonteiros{
+	from{
+		transform: rotate(90deg);
+    }
+    to{
+		transform: rotate(360deg);
+    }
+}
+
+.regressor-container{
+	position: relative;
+	/* background-color: #cf5430; */
+	background-color: #fff;
+	border-radius: 50%;
+	width: 2.5em;
+	
+	/* width: 20em; /*Para testes
+	border-radius: 1em; */
+	
+	height: 2.5em;
+	transition: .5s all ease-in-out;
+
+	align-self: flex-start;
+	justify-self: self-end;
+}
+
+.regressor-container.On{
+	width: 95%;
+	border-radius: 1em;
+}
+
+.regressor-container.Today{
+	border-radius: 5px;
+	width: 90%;
+	/* border: 3px solid #1b1b1b; */
+}
+
+.textArea{
+	position: absolute;
+	/* color: #eeeeee; */
+	color: #1b1b1b;
+	font-size: 1em;
+	margin-left: 2em;
+	display: none;
+	transition: .5s all;
+	top: 0em;
+}
+
+.textArea.show{
+	display: block;
+}
+
+.borda-interna{
+	position: absolute;
+	width: 1.5em;
+	height: 1.5em;
+	/* border: .25em solid #eeeeee; */
+	border: 3px solid #1b1b1b;
+	border-radius: 50%;
+	top: 10%;
+	left: 10%;
+	transition: all .5s ease-out;
+}
+
+.borda-interna.anim{
+	left: 0em;
+	border-radius: 1px;
+	border-color: transparent;
+}
+
+.ponteiros{
+	position: absolute;
+	width: .625em;
+	height: .25em;
+	/* background-color: #eeeeee; */
+	background-color: #1b1b1b;
+	border-radius: 4px;
+	top: 50%;
+	left: 25%;
+}
+
+.ponteiros::after{
+	content: '';
+	display: block;
+	position: absolute;
+	width: 1em;
+	height: .25em;
+	/* background-color: #eeeeee; */
+	background-color: #1b1b1b;
+	border-radius: 2px;
+	border-radius: 2px;
+	top: -140%;
+	left: 20%;
+	transform: rotate(90deg);
+	transition: .5s all;
+}
+
+.ponteiros.giro{
+	animation: girarPonteiros 1s;
+	width: 2em;
+	left: .5em;
+	top: 1.5em;
+	background-color: transparent;
+}

@@ -1,0 +1,77 @@
+@keyframes seta_animada{
+    from{
+      margin-top: -0.8em;
+    }
+    50% {
+      margin-top: 0em;
+    }
+    to{
+      margin-top: -0.8em;
+    }
+  }
+  
+  .master-container-goDown{
+    margin-right: 1.5em;
+    width: 3.75em;
+    height: 3.75em;
+    /* background-color: #2b2b2b; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  .sub-container{
+    animation: seta_animada 1s ease-in-out infinite;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  .bar-top{
+    margin-left: -1.25em;
+    width: 0.27em;
+    height: 2em;
+    border-radius: 5px;
+    background-color: #eeeeee;
+    position: relative;
+    transform: rotate(135deg);
+  }
+  
+  .bar-top::after{
+    content: '';
+    display: block;
+    position: absolute;
+    left: -0.9em;
+    top: -0.9em;
+    width: 0.27em;
+    height: 2em;
+    border-radius: 5px;
+    background-color: #eeeeee;
+    transform: rotate(270deg);
+  }
+  
+  /* .bar-down{
+    margin-top: -0.8em;
+    margin-left: -1.25em;
+    width: 0.27em;
+    height: 2em;
+    border-radius: 5px;
+    background-color: #eeeeee;
+    position: relative;
+    transform: rotate(135deg);
+  }
+  
+  .bar-down::after{
+    content: '';
+    display: block;
+    position: absolute;
+    left: -0.9em;
+    top: -0.9em;
+    width: 0.27em;
+    height: 2em;
+    border-radius: 5px;
+    background-color: #eeeeee;
+    transform: rotate(270deg);
+  } */

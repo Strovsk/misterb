@@ -1,0 +1,81 @@
+.media-bar-container{
+    width: 50px;
+    height: 90vh;
+    /* border: 2px solid #1b1b1b; */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+}
+
+@media (max-width: 1000px){
+    .media-bar-container{
+        align-self: center;
+        flex-direction: row;
+        height: 50px;
+        width: 80%;
+        align-items: center;
+    }
+}
+
+.media-bar-container a{
+    padding: 20px;
+    /* background-color: #1b1b1b; */
+    /* border-radius: 50%; */
+    transition: .5s all;
+}
+
+@media (max-width: 796px){
+    .media-bar-container{
+        /* display: none; */
+        width: 60%;
+    }
+    .media-bar-container a{
+        /* display: none; */
+        padding: 10px;
+    }
+}
+
+.media-bar-container .instagram{
+    background-image: url('../../icons/page2/instagram.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: all .1s;
+}
+.media-bar-container .facebook{
+    background-image: url('../../icons/page2/facebook.svg');
+    background-repeat: no-repeat;
+    background-size: 50%;
+    transition: all .1s;
+    align-self: center;
+}
+.media-bar-container .whatsapp{
+    background-image: url('../../icons/page2/whatsapp.svg');
+    background-repeat: no-repeat;
+    /* background-size: 50%; */
+    transition: all .1s;
+}
+.media-bar-container .tweeter{
+    background-image: url('../../icons/page2/tweeter.svg');
+    background-repeat: no-repeat;
+    /* background-size: 50%; */
+
+    transition: all .1s;
+}
+
+.media-bar-container .instagram:hover{
+    background-image: url('../../icons/page2/Instagram2.svg');
+    padding: 23px;
+}
+.media-bar-container .facebook:hover{
+    background-image: url('../../icons/page2/facebook2.svg');
+    padding: 23px;
+}
+.media-bar-container .whatsapp:hover{
+    background-image: url('../../icons/page2/whatsapp2.svg');
+    padding: 23px;
+}
+.media-bar-container .tweeter:hover{
+    background-image: url('../../icons/page2/tweeter2.svg');
+    padding: 23px;
+}
