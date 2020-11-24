@@ -45,7 +45,7 @@ body {
 	align-items: center;
     justify-content: space-between;
     
-    background-image: url('../../images/galleryPage2/imageA.jpg');
+    background-image: url("../../images/galleryPage2/imageA.jpg");
     transition: 1s all;
 
     background-size: cover;

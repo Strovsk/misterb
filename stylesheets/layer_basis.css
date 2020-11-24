@@ -17,7 +17,7 @@ ul li{
 
 .first-base{
     height: 100vh;
-    /* background-color: #1b1b1b; */
+    background-color: #1b1b1b;
     /* background-image: url("../images/back_fl_1.png"); */
     background-repeat: no-repeat;
     background-size: cover;
@@ -100,6 +100,10 @@ ul li{
 }
 
 .text-left-top-info-container ul li:nth-child(1){
+    animation: flipTop 1.5s ease-in-out;
+    top: -0.9375em;
+}
+.text-left-top-info-container ul li:nth-child(1).anim{
     animation: flipTop 1.5s ease-in-out;
     top: -0.9375em;
 }
