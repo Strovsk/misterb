@@ -53,6 +53,7 @@ function changeGalleryMin(where){
     var correspondente = {0:'A', 1:'B', 2:'C'};
     // var prev_index = current_index;
 
+    containerElement.classList.remove(`image${correspondente[current_index]}`);
     if(where == 'right'){
         current_index = current_index+1;
         if(current_index==3){
@@ -64,9 +65,11 @@ function changeGalleryMin(where){
             current_index = 2;
         }
     }
+
+    containerElement.classList.add(`image${correspondente[current_index]}`);
     // console.log(current_index);
     // console.log(`image${correspondente[prev_index]} Para image${correspondente[current_index]}`);
-    containerElement.style.backgroundImage = `url("../../images/galleryPage2/image${correspondente[current_index]}.jpg")`;
+    // containerElement.style.backgroundImage = 'url("../images/galleryPage2/image'+correspondente[current_index]+'.jpg")';
 }
 
 window.onresize = ()=>{

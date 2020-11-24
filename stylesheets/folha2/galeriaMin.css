@@ -47,9 +47,19 @@ body {
     
     background-image: url("../../images/galleryPage2/imageA.jpg");
     transition: 1s all;
-
+    
     background-size: cover;
     background-repeat: no-repeat;
+}
+
+.gallery-page-2-container.imageA{
+    background-image: url("../../images/galleryPage2/imageA.jpg");
+}
+.gallery-page-2-container.imageB{
+    background-image: url("../../images/galleryPage2/imageB.jpg");
+}
+.gallery-page-2-container.imageC{
+    background-image: url("../../images/galleryPage2/imageC.jpg");
 }
 
 .bar-left-2{
